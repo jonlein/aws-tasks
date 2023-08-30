@@ -35,8 +35,8 @@ You can user nano to create a simple html file and name it as index.html in /var
 
 You will be proving an access to the Web Server, therefore you are required to add inbound rule as below 
 
-•Type: HTTP
-•Source: Anywhere-IPv4
+- Type: HTTP
+- Source: Anywhere-IPv4
 
 > Check by typing your ipv4 address in the browser, if you can see a simple page. 
 
