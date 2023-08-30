@@ -86,13 +86,11 @@ In order to use the volume, you need to format and mount it.
 ```
 lsblk
 ```
-- Run the following command to format the volume with the ext4 file system
+- Run the following command to format the volume with the ext4 file system. Replace /dev/volumename with the actual device name of your volume.
 
 ```
 sudo mkfs -t ext4 /dev/volumename
 ```
-
-You can replace /dev/volumename with the actual device name of your volume. 
 
 - Create a directory where you want to mount the volume, for example: 
 
