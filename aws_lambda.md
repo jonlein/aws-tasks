@@ -6,14 +6,14 @@ In this task, you will utilize AWS Lambda to process files immediately after the
 
 ***You are required to follow the following steps to complete the lab***. 
 
-## Step 1: Set Up an S3 Bucket:
+### Step 1: Set Up an S3 Bucket:
 
 
-## Step 2:  Create a Function and select Python 3.11 as run time. In the execution role, use an existing role (LabRole)
+### Step 2:  Create a Function and select Python 3.11 as run time. In the execution role, use an existing role (LabRole)
 
 
 
-## Step 3: Use the following source code for the lambda function. 
+### Step 3: Use the following source code for the lambda function. 
 
 ***Code for the function***
 ```
@@ -56,17 +56,17 @@ def lambda_handler(event, context):
 
 ```
 
-## Step 4: Upload a small file to the S3 bucket your created earlier
+### Step 4: Upload a file to the S3 bucket your created earlier
 
 
-## Step 5: Update the test case and check your function is working as it should. 
-
-
-
-## Step 6: Create a trigger so that every time you upload a file to the S3 bucket, it should get the meta info in the logs. 
+### Step 5: Update the test case and check your function is working as it should. 
 
 
 
-## Step 7: Go to CloudWatch >> Logs >> Log Groups >> From the list of log, select the log of your function and ensure that you in the log you can see the metadata of the upload files. 
+### Step 6: Create a trigger so that every time you upload a file to the S3 bucket, it should get the meta info in the logs. 
+
+
+
+### Step 7: Go to CloudWatch >> Logs >> Log Groups >> From the list of log, select the log of your function and ensure that you in the log you can see the metadata of the upload files. 
 
     
