@@ -1,4 +1,4 @@
-# What is AWS Lambda ? - Retrieving the metadata of a file that is uploaded in S3 bucket.
+# What is AWS Lambda ?
 
 > AWS Lambda is a serverless compute service that allows you to run code in response to events without needing to manage the underlying infrastructure. With AWS Lambda, you can build applications or services that automatically scale in response to incoming traffic or other triggers, without having to provision or manage servers. For example, each time a user uploads an image to a S3 bucket, it can instantly invoke a Lambda function to generate a thumbnail for that image.
 
