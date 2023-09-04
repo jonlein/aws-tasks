@@ -21,9 +21,9 @@ You are required to follow the following steps to complete the lab.
 ### Install & start a simple Web Server by running the following commands
 
 ```
-dnf install -y httpd
-systemctl enable httpd
-systemctl start httpd
+sudo dnf install -y httpd
+sudo systemctl enable httpd
+sudo systemctl start httpd
 
 ```
 
@@ -86,7 +86,7 @@ In order to use the volume, you need to format and mount it.
 ```
 lsblk
 ```
-- Run the following command to format the volume with the ext4 file system. Replace /dev/volumename with the actual device name of your volume.
+- Run the following command to format the volume with the ext4 file system. Replace /dev/volumename with the actual device name of your volume. 
 
 ```
 sudo mkfs -t ext4 /dev/volumename
