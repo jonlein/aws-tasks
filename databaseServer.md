@@ -49,9 +49,9 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 cd /var/www
 mkdir inc
 cd inc
-nano conn.inc
+nano dbinfo.inc
 ```
-- The content of the conn.inc is as below. You need to update information in the file to your own DB instance information 
+- The content of the dbinfo.inc is as below. You need to update information in the file to your own DB instance information 
 ```
 <?php
 
