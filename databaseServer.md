@@ -62,7 +62,7 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
     ```
 ### Connect your Apache web server to your DB instance
 
-- Connect to your EC2 instance and create a directory named ```inc```. Inside the inc directory, create a file and name it as dbinfo.inc. 
+- Connect to your EC2 instance and create a directory named ```inc```. Inside the inc directory, create a file and name it as dbcon.php 
 
 ```
 cd /var/www
