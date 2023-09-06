@@ -11,7 +11,7 @@ For your EC2 instance, please allow SSH traffic from anywhere and create a ssh k
 ***Run the following command to update the software on your EC2 instance and install the Apache web server, PHP, and MariaDB software.***
 ```
 sudo dnf update -y
-sudo dnf install -y httpd php php-mysqli
+sudo dnf install -y httpd php php-mysqli mariadb105
 sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
