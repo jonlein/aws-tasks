@@ -214,7 +214,8 @@ function TableExists($tableName, $connection, $dbName) {
 ### Check if your page is working 
 - Add some data from the form and ensure that it is added to your database table.
 
-
+### Challenge Task: Run the above php page by utilizing AWS Elastic Beanstalk service. 
+ 
 ### Read More
 - [Amazon Relational Database Service](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 - [MySQL on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html)
