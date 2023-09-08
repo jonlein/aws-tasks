@@ -2,7 +2,11 @@
 
 > Amazon RDS (Relational Database Service) is an AWS-managed database service. It simplifies database administration tasks like provisioning, backups, and scaling for popular relational database engines (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server). RDS offers high availability, security features, automated updates, and monitoring. It's ideal for applications of all sizes, providing a hassle-free database solution in the cloud.
 
-## Practical Task: A (Amazon RDS) Database instance that is connected to Amazon EC2 instance
+## Practical Task: (Amazon RDS) Database,  Amazon EC2 & Amazon Beanstalk
+
+In this task, you will run a simple php page that is running on a web server (EC2 Instance)and utilizes a database from Amazon RDS. 
+
+After completing the first part of the lab, you will run the same app by using Amazon Beanstalk & Amazon RDS. 
 
 ### Step 1: Create an EC2 Instance 
 
@@ -50,6 +54,7 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 - Create a database with the following command 
     ```
     create database dbname; 
+    use databasename;
     ```
 - Create a simle table that will be used later on
 
