@@ -71,6 +71,12 @@ def lambda_handler(event, context):
 
 ### Step 7: Go to CloudWatch >> Logs >> Log Groups >> From the list of log, select the log of your function and ensure that you in the log you can see the metadata of the upload files. 
 
+## Practical Task: Automating EBS Snapshot Creation 
+
+In this task, you will create a Lambda Function that runs Python code to create EBS snapshots according to the schedule.  
+
+***Note: After completing the tasks, make sure to terminate/delete your resources to avoid unnecessary costs.** 
+
 ### Read More
 - [AWS Lambda - Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 - [Tutorial: Using an Amazon S3 trigger to create thumbnail images](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)

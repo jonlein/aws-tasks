@@ -132,3 +132,44 @@ DocumentRoot "/mnt/webserver"
 ```
 sudo systemctl restart httpd
 ```
+
+## Creating EBS snapshots
+
+In this task, you will learn to create a EBS snapshot for Amazon EBS volume that you created above and name it as . Follow these steps:
+
+1. Log in to the AWS Management Console.
+
+2. Navigate to the EC2 dashboard.
+
+3. Choose "Volumes" from the left sidebar to view your existing EBS volumes.
+
+4. Select an EBS volume for which you want to create a snapshot.
+
+5. In the "Actions" dropdown, choose "Create Snapshot."
+
+6. Provide a meaningful description for the snapshot.
+
+7. Review the snapshot configuration and click "Create Snapshot."
+
+## Copying EBS Snapshots
+
+In this task, you will learn to copy a snapshot. 
+
+1. Choose the snapshot you created above.
+
+2. In the "Actions" dropdown, select "Copy Snapshot."
+
+3. Configure the snapshot copy settings, including the destination region and description.
+
+4. Click "Copy Snapshot" to initiate the copy process.
+
+
+## Delete EBS Snapshot 
+
+In this task, you will learn to delete a snapshot. 
+
+1. Select one of the snapshots.
+
+2. In the "Actions" dropdown, choose "Delete Snapshot."
+
+3. Confirm the deletion when prompted.
