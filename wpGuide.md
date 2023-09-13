@@ -1,4 +1,4 @@
-## Installing WordPress
+## Installing WordPress 
 
 ### Step 1: Connect to your EC2 instance and get to the command line
 
