@@ -14,7 +14,7 @@ sudo wget /var/www/html/https://wordpress.org/latest.zip
 2. Unzip the wordpress file 
 
 ```
-# install the unzip tool 
+# install the unzip tool (if you have Amazon Linux)
 sudo dnf install -u unzip 
 
 #use the following command to unzip your wordpress file
