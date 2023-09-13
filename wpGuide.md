@@ -33,7 +33,7 @@ In this file you need to update the hostname (Database endpoint) , database name
 ### Step 4: Install WordPress
 
 1. Open a web browser and go to your website's domain (e.g., http://example.com/wordpress.
-2. You will see the WordPress installation wizard:
+2. You will see the WordPress installation wizard: (Go through these steps only if you have not configure the wp-config.php above)
    - Select your preferred language and click "Continue."
    - On the next page, you'll be prompted to enter your database information:
      - **Database Name:** Enter the name of the database you created in Step 3.
@@ -55,5 +55,5 @@ In this file you need to update the hostname (Database endpoint) , database name
 ### Step 5: Log in to Your WordPress Dashboard
 
 1. Enter the username and password you set in Step 4.
-2. You will now have access to your WordPress dashboard, where you can start customizing your website, adding content, and installing themes and plugins.
+2. Log in to your WordPress site and make a simple post. In the same post, you will need to include an image from your s3 bucket. 
 
