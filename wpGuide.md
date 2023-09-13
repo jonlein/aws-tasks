@@ -21,10 +21,14 @@ sudo dnf install -u unzip
 sudo unzip /var/www/html/latest.zip
 
 ```
+3. Update the wp-config-sample.php and rename it as wp-config.php (Do this after you have created the database service and a database)
+
+In this file you need to update the hostname (Database endpoint) , database name, username, and password.
+
 
 ### Step 3: Create a Database
 
-1. Create a Database for the wordpress website by utilizing RDS service.  Note down the database name, username, and password you set during this process. You'll need these for the WordPress installation.
+1. Create a Database for the wordpress website by utilizing RDS service.  Note down the database name, username, and password you set during this process. You'll need these for the WordPress installation. 
 
 ### Step 4: Install WordPress
 
