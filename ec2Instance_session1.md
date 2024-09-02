@@ -4,10 +4,10 @@ In this task, you will practically create an Amazon EC2 instance,set up a simple
 
 You are required to follow the following steps to complete the lab. 
 
-## Launch the Instance
+## Launch the Instance under AWS Academy Learner Lab
 
-1. Launch ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** 
-2. Launch Your Amazon EC2 Instance. (Follow the guidelines as mentioned in the Lab document till Step 13.)
+1. If you are have not yet done ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** It is recommended to complete that lab first.
+2. Launch Your Amazon EC2 Instance. (You can follow the guidelines as mentioned in the Lab document till Step 13. (Lab 3)
 3. In **Step 14**, it asks you to remove the  Inbound security group rules. ```Please do not remove it.``` Let the rule exist as you will make SSH connection to this newly created instance. 
 4. Continue to Step 15 as it is and then **launch the instance.** 
 
@@ -19,7 +19,7 @@ Under instances, you willl notice Bastion Host. "A Bastion Host in AWS is a spec
 
 1. Use SSH client to connect to your newly created instance. 
 
-> Note, you can connect to each others instances and do the following tasks: 
+> Note, you can connect to each others instances and do the following tasks. 
 
 ### Install & start a simple Web Server by running the following commands
 
