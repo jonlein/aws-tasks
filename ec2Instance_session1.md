@@ -11,6 +11,9 @@ You are required to follow the following steps to complete the lab.
 3. In **Step 14**, it asks you to remove the  Inbound security group rules. ```Please do not remove it.``` Let the rule exist as you will make SSH connection to this newly created instance. 
 4. Continue to Step 15 as it is and then **launch the instance.** 
 
+### Bastion Host
+
+Under instances, you willl notice Bastion Host. "A Bastion Host in AWS is a special-purpose instance that acts as a gateway for accessing and managing other resources within a Virtual Private Cloud (VPC) that are not directly accessible from the internet. It provides a secure way to access servers (such as EC2 instances) in a private subnet."  [Read More](https://aws.amazon.com/solutions/implementations/linux-bastion/)
 
 ## Establish a Connection to Your Instance
 
