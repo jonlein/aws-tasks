@@ -6,7 +6,7 @@ You are required to follow the following steps to complete the lab.
 
 ## Launch the Instance under AWS Academy Learner Lab
 
-1. If you are have not yet done ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** It is recommended to complete that lab first.
+1. If you have not yet done ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** It is recommended to complete that lab first.
 2. Launch Your Amazon EC2 Instance. (You can follow the guidelines as mentioned in the Lab document till Step 13. (Lab 3)
 3. In **Step 14**, it asks you to remove the  Inbound security group rules. ```Please do not remove it.``` Let the rule exist as you will make SSH connection to this newly created instance. 
 4. Continue to Step 15 as it is and then **launch the instance.** 
@@ -19,7 +19,13 @@ Under instances, you willl notice Bastion Host. "A Bastion Host in AWS is a spec
 
 1. Use SSH client to connect to your newly created instance. 
 
-> Note, you can connect to each others instances and do the following tasks. 
+**You will need a key pair, if you have not stored vockey key at the time of generation, you might need to create a new key pair.**
+- Public key: Amazon EC2 stores the public key on your instance.
+- Private key: You securely store the private key as anyone with access to it can connect to your instances using that key pair.
+
+When launching an instance, you need to sepcify the key pair. 
+
+[Read More About Key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html?icmpid=docs_ec2_console#having-ec2-create-your-key-pair)
 
 ### Install & start a simple Web Server by running the following commands
 
