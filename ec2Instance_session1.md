@@ -65,7 +65,9 @@ Creating a custom AMI allows you to capture a snapshot of a particular configura
 
 [Link](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html) 
 
-Locate the image that you have created. **Try to launch a new instance** with your own AMI however you won't be able to do it due to the restrictions in the lab environment.
+Locate the image that you have created. **Try to launch a new instance** with your own AMI and check if it includes a webserver and the files you have created in your earlier instance.
+
+***Note: Always remember to delete the unused resoruces so that you don't burn your credits.***
 
 ## Create an Amazon EBS (Elastic Block Store) volume 
 
