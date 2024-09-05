@@ -38,7 +38,13 @@ sudo systemctl start httpd
 
 ### Create a simple html page
 
-You can user nano to create a simple html file and name it as index.html in /var/www/html directory. In the index.html file, you can write your own Name. 
+- You can user nano to create a simple html file and name it as index.html in /var/www/html directory. In the index.html file, you can write your own Name.
+- You can also use VSC to create/edit files. You need to remote explorer extensions and configure the fie permissons
+
+```
+sudo chown -R ec2-user:root /var/www/html
+sudo chmod 775 /var/www/html
+``` 
 
 ### Update Your Security Group 
 
