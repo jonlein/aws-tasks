@@ -1,6 +1,6 @@
 # Amazon Elastic Compute Cloud (Amazon EC2) 
 
-In this task, you will practically create an Amazon EC2 instance,set up a simple web server,create your own AMI image from an Amazon EC2 instance, create a volume and attach the volume to your EC2 instance. This practical task is based on Lab 3 from the Amazon Cloud Academy with a bit of modification to align with the academic context. 
+In this task, you will practically create an Amazon EC2 instance,set up a simple web server,create your own AMI image from an Amazon EC2 instance, create a volume and attach the volume to your EC2 instance. Before you do this task make sure that you have  Lab 3 from the Amazon Cloud Academy and is a familiar with EC2. 
 
 You are required to follow the following steps to complete the lab. 
 
