@@ -1,22 +1,31 @@
-# Amazon Elastic Compute Cloud (Amazon EC2) Linux
+# Amazon Elastic Compute Cloud (Amazon EC2) 
 
-In this task, you will practically create an Amazon EC2 instance,set up a simple web server,create your own AMI image from an Amazon EC2 instance, create a volume and attach the volume to your EC2 instance. This practical task is based on Lab 3 from the Amazon Cloud Academy with a bit of modification to align with the academic context. 
+In this task, you will practically create an Amazon EC2 instance,set up a simple web server,create your own AMI image from an Amazon EC2 instance, create a volume and attach the volume to your EC2 instance. Before you do this task make sure that you have  Lab 3 from the Amazon Cloud Academy and is a familiar with EC2. 
 
 You are required to follow the following steps to complete the lab. 
 
-## Launch the Instance
+## Launch the Instance under AWS Academy Learner Lab
 
-1. Launch ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** 
-2. Launch Your Amazon EC2 Instance. (Follow the guidelines as mentioned in the Lab document till Step 13.)
+1. If you have not yet done ***Lab 3 – Introduction to Amazon EC2*** from **AWS Academy Portal.** It is recommended to complete that lab first.
+2. Launch Your Amazon EC2 Instance. (You can follow the guidelines as mentioned in the Lab document till Step 13. (Lab 3)
 3. In **Step 14**, it asks you to remove the  Inbound security group rules. ```Please do not remove it.``` Let the rule exist as you will make SSH connection to this newly created instance. 
 4. Continue to Step 15 as it is and then **launch the instance.** 
 
+### Bastion Host
+
+Under instances, you willl notice Bastion Host. "A Bastion Host in AWS is a special-purpose instance that acts as a gateway for accessing and managing other resources within a Virtual Private Cloud (VPC) that are not directly accessible from the internet. It provides a secure way to access servers (such as EC2 instances) in a private subnet."  [Read More](https://aws.amazon.com/solutions/implementations/linux-bastion/)
 
 ## Establish a Connection to Your Instance
 
 1. Use SSH client to connect to your newly created instance. 
 
-> Note, you can connect to each others instances and do the following tasks: 
+**You will need a key pair, if you have not stored vockey key at the time of generation, you might need to create a new key pair.**
+- Public key: Amazon EC2 stores the public key on your instance.
+- Private key: You securely store the private key as anyone with access to it can connect to your instances using that key pair.
+
+When launching an instance, you need to sepcify the key pair. 
+
+[Read More About Key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html?icmpid=docs_ec2_console#having-ec2-create-your-key-pair)
 
 ### Install & start a simple Web Server by running the following commands
 
@@ -29,7 +38,13 @@ sudo systemctl start httpd
 
 ### Create a simple html page
 
-You can user nano to create a simple html file and name it as index.html in /var/www/html directory. In the index.html file, you can write your own Name. 
+- You can user nano to create a simple html file and name it as index.html in /var/www/html directory. In the index.html file, you can write your own Name.
+- You can also use VSC to create/edit files. You need to remote explorer extensions and configure the fie permissons
+
+```
+sudo chown -R ec2-user:root /var/www/html
+sudo chmod 775 /var/www/html
+``` 
 
 ### Update Your Security Group 
 
@@ -50,7 +65,9 @@ Creating a custom AMI allows you to capture a snapshot of a particular configura
 
 [Link](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html) 
 
-Locate the image that you have created. **Try to launch a new instance** with your own AMI however you won't be able to do it due to the restrictions in the lab environment.
+Locate the image that you have created. **Try to launch a new instance** with your own AMI and check if it includes a webserver and the files you have created in your earlier instance.
+
+***Note: Always remember to delete the unused resoruces so that you don't burn your credits.***
 
 ## Create an Amazon EBS (Elastic Block Store) volume 
 
@@ -132,3 +149,44 @@ DocumentRoot "/mnt/webserver"
 ```
 sudo systemctl restart httpd
 ```
+
+## Creating EBS snapshots
+
+In this task, you will learn to create a EBS snapshot for Amazon EBS volume that you created above and name it as . Follow these steps:
+
+1. Log in to the AWS Management Console.
+
+2. Navigate to the EC2 dashboard.
+
+3. Choose "Volumes" from the left sidebar to view your existing EBS volumes.
+
+4. Select an EBS volume for which you want to create a snapshot.
+
+5. In the "Actions" dropdown, choose "Create Snapshot."
+
+6. Provide a meaningful description for the snapshot.
+
+7. Review the snapshot configuration and click "Create Snapshot."
+
+## Copying EBS Snapshots
+
+In this task, you will learn to copy a snapshot. 
+
+1. Choose the snapshot you created above.
+
+2. In the "Actions" dropdown, select "Copy Snapshot."
+
+3. Configure the snapshot copy settings, including the destination region and description.
+
+4. Click "Copy Snapshot" to initiate the copy process.
+
+
+## Delete EBS Snapshot 
+
+In this task, you will learn to delete a snapshot. 
+
+1. Select one of the snapshots.
+
+2. In the "Actions" dropdown, choose "Delete Snapshot."
+
+3. Confirm the deletion when prompted.
