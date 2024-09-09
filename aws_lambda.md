@@ -12,13 +12,10 @@ In this task, you will utilize AWS Lambda to process files immediately after the
 ***You are required to follow the following steps to complete the lab***. 
 
 ### Step 1: Set Up an S3 Bucket:
+1. Go to the S3 Console and create an S3 bucket to upload files. (General Purpose, ACLs disabled, Block Public Access Settings for this bucket, Bucket Versioning: Disabled)
 
 
-### Step 2:  Create a Function and select Python 3.11 as run time. In the execution role, use an existing role (LabRole)
-
-
-
-### Step 3: Use the following source code for the lambda function. 
+### Step 2:  Create a Lambda Function and select Python 3.11 as run time. In the execution role, use an existing role (LabRole). Use the following source code for the lambda function. Save and deploy the function.
 
 ***Code for the function***
 ```
@@ -60,25 +57,31 @@ def lambda_handler(event, context):
         }
 
 ```
-
 ### Step 4: Upload a file to the S3 bucket your created earlier
 
 
 ### Step 5: Update the test case and check your function is working as it should. 
 
+1. **Create a test event** in the AWS Lambda Console as in the image below.
+2. **Update the bucket name** and image file name in the event to match what exists in your S3 bucket.
+3. Click **Test** to run the function.
+4. You can now **deploy the function**.
 
+![test creation](images/test.png)
 
 ### Step 6: Create a trigger so that every time you upload a file to the S3 bucket, it should get the meta info in the logs. 
-
+![test creation](images/trigger.png)
 
 
 ### Step 7: Go to CloudWatch >> Logs >> Log Groups >> From the list of log, select the log of your function and ensure that you in the log you can see the metadata of the upload files. 
 
-## Practical Task: Automating EBS Snapshot Creation 
+![test creation](images/log.png)
+
+## Challenge: Automating EBS Snapshot Creation 
 
 In this task, you will create a Lambda Function that runs Python code to create EBS snapshots according to the schedule.  
 
-***Note: After completing the tasks, make sure to terminate/delete your resources to avoid unnecessary costs.** 
+**Note: After completing the tasks, make sure to terminate/delete your resources to avoid unnecessary costs.** 
 
 ### Read More
 - [AWS Lambda - Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
