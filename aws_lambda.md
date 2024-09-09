@@ -2,10 +2,10 @@
 
 > AWS Lambda is a serverless compute service that allows you to run code in response to events without needing to manage the underlying infrastructure. With AWS Lambda, you can build applications or services that automatically scale in response to incoming traffic or other triggers, without having to provision or manage servers. For example, each time a user uploads an image to a S3 bucket, it can instantly invoke a Lambda function to generate a thumbnail for that image.
 
-## Practical Task:
+## Practical Tasks:
 
-## Practical Task: Activity: AWS Lambda from the Cloud foundation module. 
-## Practical Task: AWS Lambda - Retrieving the metadata of a file that is uploaded in S3 bucket.
+## Practical Task 1: Activity: AWS Lambda from the Cloud foundation module. 
+## Practical Task 2: AWS Lambda - Retrieving the metadata of a file that is uploaded in S3 bucket.
 
 In this task, you will utilize AWS Lambda to process files immediately after they're uploaded to services like Amazon S3.Whenever a user uploads an image to the S3 bucket, it should trigger a lambda function that processes the file and logs its metadata to Amazon CloudWatch Logs.
 
