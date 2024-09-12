@@ -3,6 +3,8 @@
 ### Purpose
 > In this project work, you will deploy and manage a WordPress website using Amazon Web Services (AWS). You will utilize AWS services to create a reliable and efficient infrastructure for hosting and managing the WordPress site. 
 
+***Note: if you wish, you may do the following tasks using Amazon Beanstalk.*** 
+
 ### Materials
 ***Step-by-step guide for student***
 You will need to set up the following software stack for hosting a WordPress website. 
