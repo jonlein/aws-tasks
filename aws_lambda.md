@@ -157,6 +157,8 @@ def lambda_handler(event, context):
 
 ![test creation](images/test.png)
 
+***In the test case, remember to update the bucket name and the file name that is uploaded in s3 bucket.***
+
 ### Step 6: Create a trigger so that every time you upload a file to the S3 bucket, it should get the meta info in the logs. 
 ![test creation](images/trigger.png)
 
