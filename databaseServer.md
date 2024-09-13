@@ -1,3 +1,4 @@
+# Module 8: Databases
 # Amazon Relational Database Service (Amazon RDS)
 
 > Amazon RDS (Relational Database Service) is an AWS-managed database service. It simplifies database administration tasks like provisioning, backups, and scaling for popular relational database engines (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server). RDS offers high availability, security features, automated updates, and monitoring. It's ideal for applications of all sizes, providing a hassle-free database solution in the cloud.
