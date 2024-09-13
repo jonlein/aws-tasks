@@ -89,21 +89,6 @@ Amazon provides a range of managed database services tailored to different needs
   - User profiles
   - Metadata storage
 
-
-
-## Differences Between Amazon RDS, Amazon Aurora, DynamoDB, Redshift, ElastiCache, and DocumentDB
-
-| **Feature**         | **Amazon RDS**                              | **Amazon Aurora**                            | **Amazon DynamoDB**                        | **Amazon Redshift**                         | **Amazon ElastiCache**                      | **Amazon DocumentDB**                       |
-|---------------------|---------------------------------------------|----------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|
-| **Type**            | Relational Database                         | Relational Database                          | NoSQL                                       | Data Warehouse                              | In-Memory Cache                             | Document Database                           |
-| **Engines Supported** | MySQL, PostgreSQL, MariaDB, Oracle, SQL Server | MySQL, PostgreSQL                             | Key-Value, Document                         | Columnar Storage                             | Redis, Memcached                            | MongoDB                                     |
-| **Scalability**     | Scales compute and storage                  | Automatically scales storage up to 64 TB      | Seamless scaling of throughput and storage | Scales compute and storage                   | Scales up or out easily                      | Scales up to 64 TiB, with up to 15 replicas |
-| **High Availability** | Multi-AZ deployments                       | Multi-AZ replication                          | Multi-AZ replication with automatic failover| Multi-AZ replication with automatic failover| Replication and automatic failover for Redis | Multi-AZ deployments with automatic failover|
-| **Backup**          | Automated backups to Amazon S3              | Continuous backups to Amazon S3              | Not applicable                              | Automated backups to Amazon S3               | Not applicable                               | Automated backups to Amazon S3              |
-| **Performance**     | Good for OLTP workloads                     | High-performance, suitable for high-traffic  | Sub-millisecond response times               | Optimized for large-scale data analysis     | Sub-millisecond response times                | Performance optimized for document storage  |
-| **Use Cases**       | Web applications, business apps, BI         | High-traffic web apps, OLTP                   | Gaming, IoT, mobile apps, real-time analytics| Big data analytics, business intelligence   | Caching, session storage, real-time analytics| Content management, catalogs, user profiles |
-
-
 ## Practical Task: (Amazon RDS) Database,  Amazon EC2 & Amazon Beanstalk
 
 In this task, you will run a simple php page that is running on a web server (EC2 Instance)and utilizes a database from Amazon RDS. 
