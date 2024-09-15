@@ -115,8 +115,10 @@ sudo chown -R ec2-user:apache /var/www
 sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
+
+# Note: 2 (setgid) ensures that files created in this directory inherit the group ownership of the directory
 ```
-### Step 2: Create a MySQL DB Instance
+### Step 2: Create a MySQL DB Instance (Amazon RDS)
 
 - Select the Engine Type as MySQL 
 - Select the engine version MYSQL 8.0.33
