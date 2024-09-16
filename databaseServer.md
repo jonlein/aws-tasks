@@ -10,7 +10,7 @@ After completing the first part of the lab, you will run the same app by using A
 
 ### Step 1: Create an EC2 Instance 
 
-For your EC2 instance, please allow SSH traffic from anywhere and create a ssh key pair so that you can log in to the EC2 instance. 
+For your EC2 instance, please allow SSH traffic from anywhere and create a ssh key pair (if needed) so that you can log in to the EC2 instance. (At this point, you already have key pairs so it is better to use the existing one)
 
 ***Run the following command to update the software on your EC2 instance and install the Apache web server, PHP, and MariaDB software.***
 ```
