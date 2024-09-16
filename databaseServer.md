@@ -90,6 +90,7 @@ Amazon provides a range of managed database services tailored to different needs
   - User profiles
   - Metadata storage
 
+## Practical Task: Lab - 5 Build a Database Server (Amazon Academy Portal)
 ## Practical Task: (Amazon RDS) Database,  Amazon EC2 & Amazon Beanstalk
 
 In this task, you will run a simple php page that is running on a web server (EC2 Instance)and utilizes a database from Amazon RDS. 
