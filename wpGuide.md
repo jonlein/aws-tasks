@@ -7,7 +7,7 @@
 1. Download the Wordpress installation file to your root directory of your website that is (/var/www/html). Use the following command 
 
 ```
-sudo wget /var/www/html/https://wordpress.org/latest.zip
+sudo wget /var/www/html/ https://wordpress.org/latest.zip
 
 ```
 
@@ -15,7 +15,7 @@ sudo wget /var/www/html/https://wordpress.org/latest.zip
 
 ```
 # install the unzip tool (if you have Amazon Linux)
-sudo dnf install -u unzip 
+sudo dnf install -y unzip 
 
 #use the following command to unzip your wordpress file
 sudo unzip /var/www/html/latest.zip
