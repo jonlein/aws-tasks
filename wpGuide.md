@@ -7,7 +7,7 @@
 1. Download the Wordpress installation file to your root directory of your website that is (/var/www/html). Use the following command 
 
 ```
-sudo wget /var/www/html/ https://wordpress.org/latest.zip
+sudo wget -P /var/www/html/ https://wordpress.org/latest.zip
 
 ```
 
